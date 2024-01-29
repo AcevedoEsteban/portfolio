@@ -11,21 +11,21 @@ const projectsPage = () => {
       description:
         "Anzerbase is a revolutionary sales intelligence platform that securely gathers and organizes market and competitor insights, sales pipeline data, and business rules in one centralized location.",
       tags: ["Material UI", "Threejs", "Reactjs"],
-      // link: "https://github.com/AcevedoEsteban",
+      link: "https://github.com/AcevedoEsteban",
     },
     {
       title: "Ecommerce",
       description:
         "Ecommerce is a simple ecommerce app where you can add, edit, delete products",
       tags: [ "Typescript", "Nextjs"],
-      // link: "https://github.com/AcevedoEsteban",
+      link: "https://github.com/AcevedoEsteban",
     },
     {
       title: "The Modulus Exchange",
       description:
         "Modulus crypto exchange solution is a comprehensive, secure, and fully customizable white-label crypto exchange platform for businesses who want to launch their own exchange or brokerage.",
       tags: ["Node.js", "Chartjs", "React.js"],
-      // link: "https://github.com/AcevedoEsteban",
+      link: "https://github.com/AcevedoEsteban",
     },
     {
       title: "THREE portals - three 3d Portals",

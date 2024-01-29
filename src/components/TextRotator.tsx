@@ -17,6 +17,8 @@ function TextRotator() {
           <li className="text-[#2f7df4]">UI/UX Designer</li>
           <li className="text-[#2f7df4]">Writer</li>
           <li className="text-[#2f7df4]">Creator</li>
+          <li className="text-[#2f7df4]">Fitness Enthusiast</li>
+          <li className="text-[#2f7df4]">Novice Historian</li>
           <li className="text-[#2f7df4]">Customizer</li>
         </ul>
       </span>

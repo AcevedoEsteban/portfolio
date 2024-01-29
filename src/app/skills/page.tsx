@@ -9,27 +9,67 @@ import js from '../../../public/js.png'
 import ts from '../../../public/ts.png'
 import react from '../../../public/react.png'
 import nextjs from '../../../public/nextjs.jpeg'
-import node from '../../../public/node.jpeg'
+import node from '../../../public/node.jpg'
 import tailwind from '../../../public/tailwindcss.png'
+import redis from '../../../public/redis.png'
+import docker from '../../../public/docker.png'
+import cypress from '../../../public/cypress.jpg'
+import git from '../../../public/git.png'
+import expressjs from '../../../public/expressjs.png'
+import postgres from '../../../public/postgres.png'
+import prettier from '../../../public/prettier.png'
+import postman from '../../../public/postman.png'
+import ubuntu from '../../../public/ubuntu.png'
+import shadcn from '../../../public/shadcn.png'
+import mongoDB from '../../../public/mongoDB.jpg'
+import graphQL from '../../../public/graphQL.png'
+import lambda from '../../../public/lambda.png'
+
 import github from '../../../public/github.png'
 import vscode from '../../../public/vscode.png'
 const skillPage = () => {
 
     const language = [
+        {alt:"js", img:js},
+      { alt: "ts", img: ts },
+        { alt: "postman", img: postman },
+      { alt: "cypress", img: cypress },
+    ]
+     const webDevelopment = [
         {alt:"html", img:html},
         {alt:"css", img:css},
         {alt:"js", img:js},
-        {alt:"ts", img:ts},
-        {alt:"node", img:node},
-    ]
-    const framework = [
+        { alt: "ts", img: ts },
         {alt:"react", img:react},
+       
+     ]
+       const secondWebDevelopment = [
+        
         {alt:"nextjs", img:nextjs},
-        {alt:"scss", img:scss},
+       { alt: "scss", img: scss },
+        { alt: "prettier", img: prettier },
+        {alt:"shadcn", img:shadcn},
         {alt:"tailwind", img:tailwind},
-        {alt:"github", img:github},
-        {alt:"vscode", img:vscode},
+     ]
+       const backendDevelopment = [
+         { alt: "node", img: node },
+         { alt: "express", img: expressjs },
+         { alt: "postgres", img: postgres },
+         { alt: "redis", img: redis },
+         { alt: "graphql", img: graphQL },
+         {alt:"mongoDB", img:mongoDB},
     ]
+    const devOps = [
+      { alt: "ubuntu", img: ubuntu },
+      { alt: "docker", img: docker },
+      { alt: "github", img: github },
+      { alt: "git", img: git },
+      { alt: "lambda", img: lambda },
+      { alt: "vscode", img: vscode },
+
+      
+    ]
+    
        
 
   return (
@@ -45,22 +85,54 @@ const skillPage = () => {
         <p className="font-poppins text-xl w-full text-primary max-sm:text-lg">
         
         </p>
+
         <div className="block">
         <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
-           Programming Languages
+           Web Development
+        </h1>
+        <div className="w-full h-fit flex-row flex justify-between items-center">
+        <SkillsFooter items={webDevelopment} />
+        </div>
+        </div>
+        
+        <div className="block">
+        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+        </h1>
+        <div className="w-full h-fit flex-row flex justify-between items-center">
+        <SkillsFooter items={secondWebDevelopment} />
+        </div>
+        </div>
+
+        
+        <div className="block">
+        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+           Backend Development
+        </h1>
+        <div className="w-full h-fit flex-row flex justify-between items-center">
+        <SkillsFooter items={backendDevelopment} />
+        </div>
+        </div>
+
+
+        <div className="block">
+        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+           DevOps and Development        </h1>
+        <div className="w-full h-fit flex-row flex justify-between items-center">
+        <SkillsFooter items={devOps} />
+        </div>
+        </div>
+
+        
+        <div className="block">
+        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+           Programming Languages & Testing
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
         <SkillsFooter items={language} />
         </div>
         </div>
-        <div className="block">
-        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
-           Framework/Libraries and Version Control
-        </h1>
-        <div className="w-full h-fit flex-row flex justify-between items-center">
-        <SkillsFooter items={framework} />
-        </div>
-        </div>
+
+
       </div>
     </div>
   );
