@@ -24,6 +24,7 @@ import shadcn from '../../../public/shadcn.png'
 import mongoDB from '../../../public/mongoDB.jpg'
 import graphQL from '../../../public/graphQL.png'
 import lambda from '../../../public/lambda.png'
+import soildjs from '../../../public/soildjs.png'
 
 import github from '../../../public/github.png'
 import vscode from '../../../public/vscode.png'
