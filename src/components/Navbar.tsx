@@ -6,7 +6,7 @@ import {
   Layers,
   Lightbulb,
   PackagePlus,
-  Phone,
+  Mail,
   User2,
 } from "lucide-react";
 import { buttonVariants } from "./ui/button";
@@ -28,7 +28,7 @@ const Navbar = () => {
     { name: "projects", icon: <Layers />, link: "/projects" },
     { name: "work", icon: <Briefcase />, link: "/work" },
     // { name: "more", icon: <PackagePlus />, link: "/more" },
-    { name: "contact", icon: <Phone />, link: "/contact" },
+  { name: "Mail", icon: <Mail />, href: "mailto:aaestebanaa@gmail.com" },
   ];
 
   const [scrolling, setScrolling] = useState(false);
@@ -55,21 +55,27 @@ const Navbar = () => {
       {items.map((itm) => {
         return (
           <TooltipProvider key={itm.name}>
-            <Tooltip>
-              <TooltipTrigger asChild>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              {itm.link ? (
                 <Link href={itm.link}
-                  className={cn(
-                    buttonVariants({ variant: "ghost", size: "sm" })
-                  )}
+                  className={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
                 >
                   {itm.icon}
                 </Link>
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>{itm.name}</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+              ) : itm.href ? (
+                <a href={itm.href}
+                  className={cn(buttonVariants({ variant: "ghost", size: "sm" }))}
+                >
+                  {itm.icon}
+                </a>
+              ) : null}
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{itm.name}</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
         );
       })}
       </div>

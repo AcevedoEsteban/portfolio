@@ -25,10 +25,12 @@ import mongoDB from '../../../public/mongoDB.jpg'
 import graphQL from '../../../public/graphQL.png'
 import lambda from '../../../public/lambda.png'
 import soildjs from '../../../public/soildjs.png'
-
+import jquery from '../../../public/jquery.png'
 import github from '../../../public/github.png'
+import three from '../../../public/three.png'
 import vscode from '../../../public/vscode.png'
 const skillPage = () => {
+
 
     const language = [
         {alt:"js", img:js},
@@ -41,7 +43,10 @@ const skillPage = () => {
         {alt:"css", img:css},
         {alt:"js", img:js},
         { alt: "ts", img: ts },
-        {alt:"react", img:react},
+       { alt: "react", img: react },
+       { alt: "jquery", img: jquery },
+        { alt: "three", img: three },
+       
        
      ]
        const secondWebDevelopment = [
@@ -50,7 +55,8 @@ const skillPage = () => {
        { alt: "scss", img: scss },
         { alt: "prettier", img: prettier },
         {alt:"shadcn", img:shadcn},
-        {alt:"tailwind", img:tailwind},
+         { alt: "tailwind", img: tailwind },
+          {alt:"soildjs", img:soildjs},
      ]
        const backendDevelopment = [
          { alt: "node", img: node },
