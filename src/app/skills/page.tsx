@@ -89,12 +89,12 @@ const skillPage = () => {
       <div className="flex flex-col gap-3">
         <Heading>My Technical Experience/Skills.</Heading>
 
-        <p className="font-poppins text-xl w-full text-primary max-sm:text-lg">
+        <p className="font-poppins text-xl w-full text-custom-white max-sm:text-lg">
         
         </p>
 
         <div className="block">
-        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+        <h1 className="gap-2 text-2xl font-poppins text-custom-white font-semibold flex text_underline relative max-sm:text-xl">
            Web Development
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
@@ -103,7 +103,7 @@ const skillPage = () => {
         </div>
         
         <div className="block">
-        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+        <h1 className="gap-2 text-2xl font-poppins text-custom-white font-semibold flex text_underline relative max-sm:text-xl">
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
         <SkillsFooter items={secondWebDevelopment} />
@@ -112,7 +112,7 @@ const skillPage = () => {
 
         
         <div className="block">
-        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+        <h1 className="gap-2 text-2xl font-poppins text-custom-white font-semibold flex text_underline relative max-sm:text-xl">
            Backend Development
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
@@ -122,7 +122,7 @@ const skillPage = () => {
 
 
         <div className="block">
-        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+        <h1 className="gap-2 text-2xl font-poppins text-custom-white font-semibold flex text_underline relative max-sm:text-xl">
            DevOps and Development        </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">
         <SkillsFooter items={devOps} />
@@ -131,7 +131,7 @@ const skillPage = () => {
 
         
         <div className="block">
-        <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl">
+        <h1 className="gap-2 text-2xl font-poppins text-custom-white font-semibold flex text_underline relative max-sm:text-xl">
            Programming Languages & Testing
         </h1>
         <div className="w-full h-fit flex-row flex justify-between items-center">

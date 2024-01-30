@@ -60,7 +60,7 @@ const projectsPage = () => {
       <div className="flex flex-col gap-3">
         <Heading>My Projects</Heading>
 
-        <p className=" font-poppins text-lg w-full text-primary max-sm:text-base">
+        <p className=" font-poppins text-lg w-full text-custom-white max-sm:text-base">
         </p>
       </div>
 

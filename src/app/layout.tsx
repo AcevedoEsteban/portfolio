@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/og-image.png`],
+    images: [`${siteConfig.url}/89781.jpg`],
     siteName: siteConfig.name,
   },
 
@@ -75,9 +75,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${rubik.variable}`}>
-        <main
+       <main
           className={cn(
-            "flex relative screen break-words min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20 bg-[radial-gradient(#2f7df4_1px,transparent_1px)] [background-size:16px_16px]",
+            "flex relative screen break-words min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 max-sm:pt-20",
+            "bg-[url('/89781.jpg')] bg-cover bg-center bg-no-repeat", // Updated background image classes
             { "bg-white": "#E6E7EB" }
           )}
         >

@@ -35,7 +35,10 @@
  
     --radius: 0.5rem;
   }
- 
+ .text-custom-white {
+  color: #ffffff; /* Or any other color you prefer */
+}
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -74,6 +77,22 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.shine-effect {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% auto;
+  animation: shine 5s linear infinite;
 }
 
 /* CUSTOM CSS  */

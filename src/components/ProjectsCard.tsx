@@ -12,17 +12,19 @@ import {
 
 interface projectcardprops {
   value: any;
+  titleColor?: string;
+  descriptionColor?: string;
 }
-const ProjectCards: React.FC<projectcardprops> = ({ value }) => {
+
+const ProjectCards: React.FC<projectcardprops> = ({ value, titleColor, descriptionColor }) => {
   return (
   
-    <Card className="max-w-[32%] max-lg:max-w-full">
+    <Card className="max-w-[32%] max-lg:max-w-full ">
       <CardHeader>
-        <CardTitle>{value.title}</CardTitle>
-       
+  <CardTitle className={titleColor}>{value.title}</CardTitle>       
       </CardHeader>
       <CardContent>
-        <p className="text-base font-poppins">{value.description}</p>
+        <p className={`text-base font-poppins ${descriptionColor}`}>{value.description}</p> {/* Apply descriptionColor */}
       <div className=" w-full h-fit flex mt-2 justify-center flex-row gap-3">
         {
           value.tags.map((itm:string, indx:number) => {
