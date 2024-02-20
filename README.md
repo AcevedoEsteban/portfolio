@@ -2,7 +2,7 @@
 
 A simple and Beautiful Porfolio made with Nextjs and Shadcn Ui.
 
-![Demo](public/portsite.png)
+![Demo]()
 ## Getting Started
 
 First, run the development server:
